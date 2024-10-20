@@ -10,6 +10,13 @@ class HomeController extends Controller
     public function index(){
         return view('home');
     }
+    public function home_product_upload(){
+        return view('home_product_upload');
+    }
+    public function home_media_upload(){
+        return view('home_media_upload');
+    }
+
 
     public function add_product(Request $request){
         $data= new Product;
